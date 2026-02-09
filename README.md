@@ -63,7 +63,7 @@ This skill is perfect for:
 
 - [Lybic Dashboard](https://dashboard.lybic.cn)
 - [Lybic Documentation](https://docs.lybic.cn)
-- [Python SDK Reference](https://docs.lybic.cn/cn/sdk/python)
+- [Python SDK Reference](https://docs.lybic.cn/en/sdk/python)
 - [Playground](https://playground.lybic.cn)
 
 ## 📄 License

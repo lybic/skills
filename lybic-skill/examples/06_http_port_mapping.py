@@ -9,7 +9,6 @@ This example demonstrates:
 """
 
 import asyncio
-import base64
 from lybic import LybicClient
 
 

@@ -147,13 +147,6 @@ Supporting docs provide:
 
 ## Next Steps for Enhancement
 
-### Additional Examples (Can Be Added)
-1. `02_gui_automation.py` - Desktop GUI automation
-2. `03_file_processing.py` - File download and processing
-3. `04_manage_sandboxes.py` - Sandbox management
-4. `05_android_automation.py` - Android automation
-5. `06_http_port_mapping.py` - Port mapping
-
 ### Future Enhancements
 - CI/CD workflow examples
 - Integration with popular frameworks
@@ -184,7 +177,7 @@ Supporting docs provide:
 ## Usage
 
 Agents can now:
-1. Understand Lybic capabilities from `skill.md`
+1. Understand Lybic capabilities from `SKILL.md`
 2. Generate correct SDK code
 3. Follow best practices
 4. Handle errors appropriately

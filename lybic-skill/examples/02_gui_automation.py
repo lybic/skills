@@ -39,8 +39,8 @@ async def main():
             sandbox_id,
             action={
                 "type": "mouse:click",
-                "x": {"type": "/", "numerator": 1, "denominator": 2},
-                "y": {"type": "/", "numerator": 1, "denominator": 2},
+                "x": {"type": "/", "numerator": 500, "denominator": 1000},
+                "y": {"type": "/", "numerator": 500, "denominator": 1000},
                 "button": 1  # Left click
             }
         )

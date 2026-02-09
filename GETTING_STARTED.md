@@ -9,9 +9,9 @@ This guide will help you get up and running with the lybic-skill quickly.
    - Claim your free trial credits
    - Note your Organization ID and API Key
 
-2. **Python 3.8+**
+2. **Python 3.10+**
    ```bash
-   python --version  # Should be 3.8 or higher
+   python --version  # Should be 3.10 or higher
    ```
 
 3. **The Lybic Python SDK**
@@ -67,13 +67,9 @@ async def main():
         print("Creating sandbox...")
         sandbox = await client.sandbox.create(
             name="my-first-sandbox",
-            shape="standard-4c8g"
+            shape="beijing-2c-4g-cpu-linux"
         )
         print(f"✓ Created: {sandbox.id}")
-        
-        # Wait for it to be ready
-        print("Waiting 10 seconds...")
-        await asyncio.sleep(10)
         
         # Take screenshot
         print("Taking screenshot...")
@@ -129,8 +125,8 @@ async def main():
             sandbox_id,
             action={
                 "type": "mouse:click",
-                "x": {"type": "/", "numerator": 1, "denominator": 2},
-                "y": {"type": "/", "numerator": 1, "denominator": 2},
+                "x": {"type": "/", "numerator": 500, "denominator": 1000},
+                "y": {"type": "/", "numerator": 500, "denominator": 1000},
                 "button": 1
             }
         )
@@ -189,11 +185,10 @@ See [lybic-skill/examples/README.md](lybic-skill/examples/README.md) for all exa
 ```python
 async with LybicClient() as client:
     # Create
-    sandbox = await client.sandbox.create(name="temp", shape="standard-4c8g")
+    sandbox = await client.sandbox.create(name="temp", shape="beijing-2c-4g-cpu-linux")
     
     try:
         # Use
-        await asyncio.sleep(10)  # Wait for ready
         # ... do work ...
         
     finally:
@@ -244,7 +239,7 @@ async with LybicClient() as client:
 
 ## Next Steps
 
-- 📖 Read the [full skill documentation](lybic-skill/skill.md)
+- 📖 Read the [full skill documentation](lybic-skill/SKILL.md)
 - 📝 Try the [examples](lybic-skill/examples/)
 - 🔍 Check the [quick reference](lybic-skill/QUICKREF.md)
 - 🌐 Visit [Lybic Documentation](https://docs.lybic.cn)
@@ -254,6 +249,6 @@ async with LybicClient() as client:
 
 - 💬 Open an [issue](../../issues) for bugs or questions
 - 📧 Contact Lybic support at support@lybic.cn
-- 📚 Read the [Python SDK docs](https://docs.lybic.cn/sdk/python)
+- 📚 Read the [Python SDK docs](https://docs.lybic.cn/en/sdk/python)
 
 Happy coding! 🚀

@@ -52,7 +52,7 @@ When adding new examples:
 
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR_USERNAME/lybic-skills.git
+git clone https://github.com/lybic/skills.git
 cd lybic-skills
 
 # Create virtual environment

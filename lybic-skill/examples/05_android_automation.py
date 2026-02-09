@@ -48,8 +48,8 @@ async def main():
             sandbox_id,
             action={
                 "type": "touch:tap",
-                "x": {"type": "/", "numerator": 1, "denominator": 2},
-                "y": {"type": "/", "numerator": 1, "denominator": 2}
+                "x": {"type": "/", "numerator": 500, "denominator": 1000},
+                "y": {"type": "/", "numerator": 500, "denominator": 1000}
             }
         )
         print("✓ Tap executed")
@@ -60,8 +60,8 @@ async def main():
             sandbox_id,
             action={
                 "type": "touch:swipe",
-                "x": {"type": "/", "numerator": 1, "denominator": 2},
-                "y": {"type": "/", "numerator": 3, "denominator": 4},
+                "x": {"type": "/", "numerator": 500, "denominator": 1000},
+                "y": {"type": "/", "numerator": 750, "denominator": 1000},
                 "direction": "up",
                 "distance": {"type": "px", "value": 300}
             }

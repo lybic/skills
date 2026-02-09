@@ -23,7 +23,7 @@ if __name__ == '__main__':
 # Create sandbox
 sandbox = await client.sandbox.create(
     name="my-sandbox",
-    shape="standard-4c8g",
+    shape="beijing-2c-4g-cpu-linux",
     maxLifeSeconds=3600
 )
 
@@ -68,8 +68,8 @@ result = await client.sandbox.execute_process(
 # Click
 await client.sandbox.execute_sandbox_action("SBX-xxxx", action={
     "type": "mouse:click",
-    "x": {"type": "/", "numerator": 1, "denominator": 2},
-    "y": {"type": "/", "numerator": 1, "denominator": 2},
+    "x": {"type": "/", "numerator": 500, "denominator": 1000},
+    "y": {"type": "/", "numerator": 500, "denominator": 1000},
     "button": 1
 })
 
@@ -85,8 +85,8 @@ await client.sandbox.execute_sandbox_action("SBX-xxxx", action={
 # Scroll
 await client.sandbox.execute_sandbox_action("SBX-xxxx", action={
     "type": "mouse:scroll",
-    "x": {"type": "/", "numerator": 1, "denominator": 2},
-    "y": {"type": "/", "numerator": 1, "denominator": 2},
+    "x": {"type": "/", "numerator": 500, "denominator": 1000},
+    "y": {"type": "/", "numerator": 500, "denominator": 1000},
     "stepVertical": -5
 })
 ```
@@ -113,15 +113,15 @@ await client.sandbox.execute_sandbox_action("SBX-xxxx", action={
 # Tap
 await client.sandbox.execute_sandbox_action("SBX-xxxx", action={
     "type": "touch:tap",
-    "x": {"type": "/", "numerator": 1, "denominator": 2},
-    "y": {"type": "/", "numerator": 1, "denominator": 2}
+    "x": {"type": "/", "numerator": 500, "denominator": 1000},
+    "y": {"type": "/", "numerator": 500, "denominator": 1000}
 })
 
 # Swipe
 await client.sandbox.execute_sandbox_action("SBX-xxxx", action={
     "type": "touch:swipe",
-    "x": {"type": "/", "numerator": 1, "denominator": 2},
-    "y": {"type": "/", "numerator": 3, "denominator": 4},
+    "x": {"type": "/", "numerator": 500, "denominator": 1000},
+    "y": {"type": "/", "numerator": 750, "denominator": 1000},
     "direction": "up",
     "distance": {"type": "px", "value": 300}
 })
@@ -203,7 +203,7 @@ print(f"Projects: {stats.projects}")
 
 ```python
 # Fractional (recommended - resolution independent)
-{"type": "/", "numerator": 1, "denominator": 2}  # 50%
+{"type": "/", "numerator": 500, "denominator": 1000}  # 50%
 
 # Pixel (absolute)
 {"type": "px", "value": 500}
@@ -226,7 +226,7 @@ print(f"Projects: {stats.projects}")
 
 ```python
 try:
-    result = await client.sandbox.create(name="test", shape="standard-4c8g")
+    result = await client.sandbox.create(name="test", shape="beijing-2c-4g-cpu-linux")
 except Exception as e:
     print(f"Error: {e}")
 ```
