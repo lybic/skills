@@ -38,8 +38,8 @@ This skill enables agents to:
 
 ### Prerequisites
 
-- Python 3.8 or higher
-- A Lybic account with API key
+- Python 3.10 or higher
+- A lybic account with API key
 
 ### Setup
 

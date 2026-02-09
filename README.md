@@ -39,7 +39,7 @@ The main skill that enables AI agents to interact with Lybic cloud sandboxes thr
 
 **Documentation:**
 - [README](./lybic-skill/README.md) - User guide and examples
-- [skill.md](./lybic-skill/skill.md) - AI agent instructions
+- [SKILL.md](./lybic-skill/SKILL.md) - AI agent instructions
 - [QUICKREF.md](./lybic-skill/QUICKREF.md) - Quick reference
 - [Examples](./lybic-skill/examples/) - Working code samples
 
