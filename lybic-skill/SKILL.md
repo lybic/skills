@@ -1,6 +1,41 @@
 ---
 name: lybic cloud-computer skill
 description: A skill for controlling Lybic cloud sandboxes(computer).
+homepage: https://lybic.ai
+metadata: {
+    "openclaw": {
+        "emoji": "🧫",
+        "requires": {
+            "bins": [
+                "pip3",
+                "python3"
+            ],
+          "env": [
+            "LYBIC_ORG_ID","LYBIC_API_KEY"
+          ]
+        },
+        "install": [
+            {
+                "id": "brew",
+                "kind": "brew",
+                "formula": "python3",
+                "bins": [
+                    "python3"
+                ],
+                "label": "Install python3 (brew)"
+            },
+          {
+                "id": "brew",
+                "kind": "brew",
+                "formula": "pipx",
+                "bins": [
+                    "pip3"
+                ],
+                "label": "Install Pip (brew)"
+            }
+        ]
+    }
+}
 ---
 
 # Lybic Sandbox Control Skill
