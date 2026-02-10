@@ -198,7 +198,7 @@ Lybic supports two coordinate formats:
 
 1. **Fractional** (recommended for resolution independence):
 ```python
-{"type": "/", "numerator": 1, "denominator": 2}  # 50% of screen
+{"type": "/", "numerator": 500, "denominator": 1000}  # 50% of screen
 ```
 
 2. **Pixel** (absolute positioning):

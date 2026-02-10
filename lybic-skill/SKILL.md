@@ -377,7 +377,7 @@ Lybic determines the operating system type of the cloud sandbox through the `sha
 
 - Windows: beijing-2c-4g-cpu
 - Linux: beijing-2c-4g-cpu-linux
-- Android: acep-shenzhen-enhanced and acep-wenzhou-common-pro
+- Android: acep-shenzhen-enhanced or acep-wenzhou-common-pro
 
 ## Troubleshooting
 
