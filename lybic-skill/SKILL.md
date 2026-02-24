@@ -365,6 +365,7 @@ asyncio.run(download_and_process())
 ## Best Practices
 
 1. **Use fractional coordinates**: More portable across different screen resolutions
+   1. According to our research, most models nowadays use a relative coordinate system with a quantization of 1/1000. We recommend that you set the denominator to 1000.
 2. **Take screenshots**: Help verify GUI state before and after actions
 3. **Handle errors**: Always wrap API calls in try-except blocks
 4. **Clean up resources**: Delete sandboxes when done to avoid charges
