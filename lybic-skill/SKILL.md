@@ -149,8 +149,8 @@ output = base64.b64decode(result.stdoutBase64 or '').decode()
 # Recommended: Resolution-independent
 action = {
     "type": "mouse:click",
-    "x": {"type": "/", "numerator": 1, "denominator": 2},  # 50%
-    "y": {"type": "/", "numerator": 1, "denominator": 2},  # 50%
+    "x": {"type": "/", "numerator": 500, "denominator": 1000},  # 50%
+    "y": {"type": "/", "numerator": 500, "denominator": 1000},  # 50%
     "button": 1
 }
 
@@ -216,7 +216,7 @@ async def automate_gui():
             action={
                 "type": "mouse:click",
                 "x": {"type": "/", "numerator": 1, "denominator": 2},
-                "y": {"type": "/", "numerator": 1, "denominator": 2},
+                "y": {"type": "/", "numerator": 500, "denominator": 1000},
                 "button": 1
             }
         )
